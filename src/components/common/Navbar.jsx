@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -6,16 +7,16 @@ function Navbar() {
       <div className="px-4 py-3 mx-auto md:px-6 flex justify-center items-center w-full">
         <ul className="flex justify-center items-center space-x-8 text-sm font-medium mr-6 text-deep-gray">
           <li className="hover:underline transition duration-300 ease-in-out">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="hover:underline transition duration-300 ease-in-out">
-            <a href="/">Chart</a>
+            <Link to="/chart">Chart</Link>
           </li>
           <li className="hover:underline transition duration-300 ease-in-out">
-            <a href="/">Play Now</a>
+            <Link to="/">Play Now</Link>
           </li>
           <li className="hover:underline transition duration-300 ease-in-out">
-            <a href="/">LOGIN</a>
+            <Link to="/">LOGIN</Link>
           </li>
         </ul>
       </div>

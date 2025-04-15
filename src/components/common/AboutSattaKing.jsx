@@ -10,7 +10,10 @@ function AboutSattaKing({ aboutSattaKingData, aboutSattaKingDescription }) {
         <p>{aboutSattaKingData.info}</p>
         {aboutSattaKingDescription &&
           aboutSattaKingDescription.map((item, index) => (
-            <div className="flex flex-col items-start justify-start w-full space-y-4 mt-4" key={index}>
+            <div
+              className="flex flex-col items-start justify-start w-full space-y-4 mt-4"
+              key={index}
+            >
               <h4>
                 <strong>{item.title}</strong>
               </h4>
