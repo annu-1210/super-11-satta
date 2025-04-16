@@ -3,7 +3,7 @@ import { listTiming } from "./Helper";
 
 function ProviderDetails({ providerName }) {
   return (
-    <section className="w-full flex items-center justify-center bg-yellow-cream py-2 shadow-xl border pt-4 mx-2 my-2 rounded-xl leading-6 h-fit border">
+    <section className="w-full flex items-center justify-center bg-yellow-cream py-2 shadow-xl border pt-4 mx-2 my-5 sm:my-2 rounded-xl leading-6 h-fit border">
       <div className="flex flex-col items-center justify-center w-full">
         <div className="flex flex-col items-center justify-center w-full">
           <h4>
@@ -43,7 +43,7 @@ function ProviderDetails({ providerName }) {
               ✰✰
             </strong>
           </p>
-          <p>
+          <p className="px-2 sm:px-0 text-center">
             <strong>Game Play करने के लिये नीचे लिंक पर क्लिक करे</strong>
           </p>
           <div className="flex flex-col items-center justify-center w-full space-y-5">

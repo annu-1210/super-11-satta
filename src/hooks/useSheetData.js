@@ -12,7 +12,7 @@ const useSheetData = (sheetName) => {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          `https://script.google.com/macros/s/AKfycbwUcfPNJISjLKe7FPhj6MPZXtCQl-tbiX6mWA9qm_em-Um_Yl-CGfGDr4oyopZLXrZe/exec?sheet=${sheetName}`
+          `/api/macros/s/AKfycbwUcfPNJISjLKe7FPhj6MPZXtCQl-tbiX6mWA9qm_em-Um_Yl-CGfGDr4oyopZLXrZe/exec?sheet=${sheetName}`
         );
         setData(res.data?.data || []);
       } catch (err) {

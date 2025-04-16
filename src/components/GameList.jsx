@@ -78,7 +78,7 @@ function GameList({ sheetName = "Game_List1" }) {
                       <img
                         src="/wait-button.gif" 
                         alt="WAIT"
-                        className="h-10 w-10 mx-auto"
+                        className="h-10 w-10 lg:mx-auto"
                       />
                     )}
                   </div>

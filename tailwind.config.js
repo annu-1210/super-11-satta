@@ -12,7 +12,7 @@ export default {
         "deep-blue": "rgb(13,57,84)",
         "dusty-navy": "rgb(45, 75, 88)",
         "material-blue-500": "rgb(33, 150, 243)",
-        "light-blue":"rgb(0, 71, 138)",
+        "light-blue": "rgb(0, 71, 138)",
         "deeper-magenta ": "rgb(190, 24, 93)",
         "deep-gray": "rgb(17, 24, 39)",
         "lighter-gray": "rgba(229, 231, 235,1)",
@@ -28,6 +28,9 @@ export default {
         "dark-muted-red": "rgb(192,57,43)",
         "light-red": "rgba(248, 113, 113, 1)",
         "dark-red": "rgb(183, 28, 28)",
+        "deep-amber": "rgb(120, 53, 15)",
+        "dark-violet": "rgb(100, 0, 128)",
+        "deep-tealGreen": "rgb(4, 78, 65)",
       },
       backgroundImage: {
         "navbar-bgGradient":
@@ -38,6 +41,9 @@ export default {
           "inset -5px -5px 14px #044235, inset 5px 5px 14px #10ffd5",
         "custom-inset2":
           "inset -5px -5px 22px #02153b, inset 5px 5px 22px #0000",
+      },
+      screens: {
+        xsm: "425px",
       },
     },
   },

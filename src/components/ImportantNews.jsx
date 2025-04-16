@@ -5,7 +5,7 @@ function ImportantNews() {
   return (
     <section className="w-full flex items-center justify-center bg-transparent mt-4 overflow-hidden">
       <div className="w-full flex flex-col justify-center space-y-4 ">
-        <h2 className="bg-deep-blue text-2xl font-bold text-center text-white py-4 w-full">
+        <h2 className="bg-deep-blue text-xl sm:text-2xl font-bold text-center text-white py-4 w-full">
           Important Satta King News
         </h2>
         <div className="grid grid-cols-1 gap-2 px-4 lg:grid-cols-3">
@@ -13,7 +13,7 @@ function ImportantNews() {
             {/* <img src="" alt="" /> */}
             <div></div>
             <div className="p-5 bg-gray-700">
-              <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-100 uppercase hover:underline ">
+              <h2 className="mb-2 text-xl sm:text-2xl font-bold tracking-tight text-gray-100 uppercase hover:underline ">
                 is satta king legal ?
               </h2>
               <a

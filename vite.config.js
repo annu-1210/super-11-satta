@@ -7,4 +7,13 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   base: '/',
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://script.google.com',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, ''),
+      },
+    },
+  },
 });
