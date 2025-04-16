@@ -17,6 +17,8 @@ export default {
         "deep-gray": "rgb(17, 24, 39)",
         "lighter-gray": "rgba(229, 231, 235,1)",
         "light-gray": "rgb(128, 128, 128)",
+        "slate-gray":"rgb(55, 65, 81)",
+        "charcoal-gray":"rgb(31, 41, 55)",
         grey: "rgb(75, 85, 99)",
         lavender: "rgb(138, 101, 179)",
         "light-green": "rgba(5, 150, 105, 1)",

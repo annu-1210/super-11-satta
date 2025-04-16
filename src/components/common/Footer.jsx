@@ -10,10 +10,10 @@ function Footer() {
             <Link to="/chart">
               <li className="hover:underline">Chart</li>
             </Link>
-            <Link to="/">
+            <Link to="/privacy-policy">
               <li className="hover:underline">Privacy Policy</li>
             </Link>
-            <Link to="/">
+            <Link to="/terms-conditions">
               <li className="hover:underline">Terms & Conditions</li>
             </Link>
             <Link

@@ -12,6 +12,8 @@ function Hero() {
   const isHome = location.pathname === "/";
   const isYearRecord = location.pathname === "/year-records";
   const isChart = location.pathname === "/chart";
+  const isPrivacyPolicy = location.pathname === "/privacy-policy";
+  const isTermsConditions = location.pathname === "/terms-conditions";
 
   const { data: resultsData } = useSheetData("OnGoing_Game");
 
@@ -34,7 +36,7 @@ function Hero() {
           <GameUpdation />
           {!isYearRecord && isHome && <InstructorIntro />}
         </div>
-        {!isYearRecord && (
+        {!isYearRecord && !isPrivacyPolicy && !isTermsConditions && (
           <div className="flex flex-col items-center justify-center w-full pt-4 sm:pt-1">
             <div className="flex flex-col items-center justify-center w-full">
               <p className="text-lg sm:text-xl font-bold uppercase">
