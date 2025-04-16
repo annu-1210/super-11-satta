@@ -25,7 +25,7 @@ function Hero() {
     <section className="w-full flex items-center justify-center bg-transparent mt-6 sm:mt-0">
       <div className="w-full flex flex-col items-center justify-center space-y-2">
         <div className="flex flex-col items-center justify-center space-y-1 sm:space-y-2 text-center text-black text-lg font-bold">
-          <h3 className="uppercase">Welcome to super-7-satta</h3>
+          <h3 className="uppercase">Welcome to super-11-satta</h3>
           <p>
             <LiveClock />
           </p>
@@ -55,7 +55,7 @@ function Hero() {
             </div>
             {isHome && (
               <h4 className="bg-yellow-cream w-full max-w-[1264px] flex items-center justify-center text-center text-black shadow-xl border rounded-xl leading-6 font-semibold h-fit px-1 sm:px-4 sm:pt-4 py-2 mx-0 sm:mx-2 mt-6 sm:mt-2 my-2 leading-6 border-transparent rounded-none font-normal shadow-none text-sm sm:text-lg">
-                To Check instant A7 SATTA KING Results , Check Below Chart 👇🏿
+                To Check instant A11 SATTA KING Results , Check Below Chart 👇🏿
               </h4>
             )}
 

@@ -34,7 +34,7 @@ function Footer() {
         <div className="flex items-center justify-center space-x-1 text-sm text-white sm:text-center ">
           <span> &copy;</span>
           <a href="/" className="hover:underline ">
-            super-7-satta.com&trade;.{" "}
+            super-11-satta.com&trade;.{" "}
           </a>
           <p> All Rights Reserved.</p>
         </div>

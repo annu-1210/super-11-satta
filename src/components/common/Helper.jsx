@@ -1,7 +1,7 @@
 export const resultsArr = [
   "REAL SATTA KING RESULT SITE ON INTERNET",
   "SHRI GANESH SATTA KING RESULT SITE ON INTERNET",
-  "A7 SATTA KING RESULT SITE ON INTERNET",
+  "A11 SATTA KING RESULT SITE ON INTERNET",
   "SHRI GANESH SATTA CHART 2025 SITE ON INTERNET",
   "DELHI BAZAR SATTA CHART 2025 SITE ON INTERNET",
 ];
@@ -26,7 +26,7 @@ export const aboutSattaKing = [
     info: "REAL Satta king is a popular form of lottery and gambling that originated in India. It involves betting on numbers and is widely played across the country. The game holds cultural significance and has a rich history dating back several decades.",
   },
   {
-    heading: "Evolution of A7 Satta King",
+    heading: "Evolution of A11 Satta King",
     info: 'The history of satta king can be traced back to the pre-independence era when it was known as "Ankada Jugar" or "Matka Gambling." Initially played in a more informal setting, the game gradually gained popularity and evolved into its current form. Over the years, satta king has become ingrained in Indian society, with millions of players participating in various satta king games.',
   },
   {
