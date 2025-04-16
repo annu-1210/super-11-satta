@@ -1,5 +1,6 @@
 import React from "react";
 import useSheetData from "../hooks/useSheetData";
+import { useNavigate } from "react-router-dom";
 
 const formatTime = (timeString) => {
   try {
@@ -26,6 +27,9 @@ const formatTime = (timeString) => {
 };
 
 function GameList({ sheetName = "Game_List1" }) {
+  const navigate = useNavigate();
+  const currentYear = new Date().getFullYear(); // Automatically gets 2025
+
   const { data, loading } = useSheetData(sheetName);
   console.log("Game List Data:", data);
 
@@ -57,11 +61,18 @@ function GameList({ sheetName = "Game_List1" }) {
                       <p className="text-sm font-semibold text-dark-red">
                         {formatTime(game.Time)}
                       </p>
-                      <a href="/">
-                        <button className="px-2 text-xs bg-yellow py-0.5 rounded-md hover:bg-light-yellow">
-                          View Chart
-                        </button>
-                      </a>
+                      <button
+                        className="px-2 text-xs bg-yellow py-0.5 rounded-md hover:bg-light-yellow"
+                        onClick={() =>
+                          navigate(
+                            `/year-records?location=${encodeURIComponent(
+                              game.Name
+                            )}&year=${currentYear}`
+                          )
+                        }
+                      >
+                        View Chart
+                      </button>
                     </div>
                   </div>
                   <div className="flex items-center justify-around w-[75%] !text-2xl font-medium tracking-wider">
@@ -76,7 +87,7 @@ function GameList({ sheetName = "Game_List1" }) {
                       </p>
                     ) : (
                       <img
-                        src="/wait-button.gif" 
+                        src="/wait-button.gif"
                         alt="WAIT"
                         className="h-10 w-10 lg:mx-auto"
                       />
