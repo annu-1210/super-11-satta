@@ -1,34 +1,11 @@
 import React from "react";
 import useSheetData from "../hooks/useSheetData";
 import { useNavigate } from "react-router-dom";
-
-const formatTime = (timeString) => {
-  try {
-    let date;
-    if (timeString && !isNaN(new Date(timeString).getTime())) {
-      date = new Date(timeString);
-    } else {
-      const [hours, minutes] = timeString.split(":");
-      date = new Date();
-      date.setHours(hours);
-      date.setMinutes(minutes);
-    }
-
-    const options = {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: true,
-    };
-
-    return date.toLocaleTimeString("en-US", options);
-  } catch (error) {
-    return timeString;
-  }
-};
+import { formatTime } from "./common/Helper";
 
 function GameList({ sheetName = "Game_List1" }) {
   const navigate = useNavigate();
-  const currentYear = new Date().getFullYear(); // Automatically gets 2025
+  const currentYear = new Date().getFullYear();
 
   const { data, loading } = useSheetData(sheetName);
   console.log("Game List Data:", data);

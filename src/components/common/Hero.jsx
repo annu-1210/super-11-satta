@@ -5,32 +5,7 @@ import InstructorIntro from "../InstructorIntro";
 import { FaArrowRight } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 import useSheetData from "../../hooks/useSheetData";
-
-const formatTime = (timeString) => {
-  try {
-    let date;
-    if (timeString && !isNaN(new Date(timeString).getTime())) {
-      date = new Date(timeString);
-    } else {
-      const [hours, minutes] = timeString.split(":");
-      date = new Date();
-      date.setHours(hours);
-      date.setMinutes(minutes);
-    }
-
-    const options = {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: true,
-    };
-
-    return date.toLocaleTimeString("en-US", options);
-  } catch (error) {
-    return timeString;
-  }
-};
-
-
+import { formatTime } from "./Helper";
 
 function Hero() {
   const location = useLocation();
@@ -65,7 +40,9 @@ function Hero() {
               <p className="text-lg sm:text-xl font-bold uppercase">
                 {resultGame}
               </p>
-              <p className="py-1 sm:py-2 text-sm text-gray-800">({formattedTime})</p>
+              <p className="py-1 sm:py-2 text-sm text-gray-800">
+                ({formattedTime})
+              </p>
               <div className="flex items-center justify-center">
                 <strong className="text-xl sm:text-2xl">
                   &#123; {previousResult} &#125;

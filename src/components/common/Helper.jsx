@@ -82,110 +82,26 @@ export const locations = [
   " Aligarh night ",
 ];
 
-// const tableData = [
-//   {
-//     Date: "2025-04-01",
-//     "Sadar Bazar": "98",
-//     Gwalior: "12",
-//     "Shri Ganesh": "51",
-//     Faridabad: "09",
-//   },
-//   {
-//     Date: "2025-04-02",
-//     "Sadar Bazar": "97",
-//     Gwalior: "85",
-//     "Shri Ganesh": "41",
-//     Faridabad: "03",
-//   },
-//   {
-//     Date: "2025-04-03",
-//     "Sadar Bazar": "43",
-//     Gwalior: "41",
-//     "Shri Ganesh": "70",
-//     Faridabad: "98",
-//   },
-//   {
-//     Date: "2025-04-04",
-//     "Sadar Bazar": "41",
-//     Gwalior: "98",
-//     "Shri Ganesh": "41",
-//     Faridabad: "82",
-//   },
-//   {
-//     Date: "2025-04-05",
-//     "Sadar Bazar": "06",
-//     Gwalior: "44",
-//     "Shri Ganesh": "43",
-//     Faridabad: "68",
-//   },
-//   {
-//     Date: "2025-04-06",
-//     "Sadar Bazar": "18",
-//     Gwalior: "34",
-//     "Shri Ganesh": "20",
-//     Faridabad: "68",
-//   },
-//   {
-//     Date: "2025-04-07",
-//     "Sadar Bazar": "38",
-//     Gwalior: "22",
-//     "Shri Ganesh": "93",
-//     Faridabad: "51",
-//   },
-//   {
-//     Date: "2025-04-08",
-//     "Sadar Bazar": "29",
-//     Gwalior: "74",
-//     "Shri Ganesh": "85",
-//     Faridabad: "55",
-//   },
-//   {
-//     Date: "2025-04-09",
-//     "Sadar Bazar": "45",
-//     Gwalior: "28",
-//     "Shri Ganesh": "25",
-//     Faridabad: "44",
-//   },
-//   {
-//     Date: "2025-04-10",
-//     "Sadar Bazar": "12",
-//     Gwalior: "86",
-//     "Shri Ganesh": "51",
-//     Faridabad: "56",
-//   },
-//   {
-//     Date: "2025-04-11",
-//     "Sadar Bazar": "55",
-//     Gwalior: "06",
-//     "Shri Ganesh": "85",
-//     Faridabad: "20",
-//   },
-//   {
-//     Date: "2025-04-12",
-//     "Sadar Bazar": "16",
-//     Gwalior: "27",
-//     "Shri Ganesh": "70",
-//     Faridabad: "74",
-//   },
-//   {
-//     Date: "2025-04-13",
-//     "Sadar Bazar": "82",
-//     Gwalior: "21",
-//     "Shri Ganesh": "39",
-//     Faridabad: "67",
-//   },
-//   {
-//     Date: "2025-04-14",
-//     "Sadar Bazar": "03",
-//     Gwalior: "86",
-//     "Shri Ganesh": "90",
-//     Faridabad: "03",
-//   },
-//   {
-//     Date: "2025-04-15",
-//     "Sadar Bazar": "61",
-//     Gwalior: "-",
-//     "Shri Ganesh": "-",
-//     Faridabad: "-",
-//   },
-// ];
+export const formatTime = (timeString) => {
+  try {
+    let date;
+    if (timeString && !isNaN(new Date(timeString).getTime())) {
+      date = new Date(timeString);
+    } else {
+      const [hours, minutes] = timeString.split(":");
+      date = new Date();
+      date.setHours(hours);
+      date.setMinutes(minutes);
+    }
+
+    const options = {
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: true,
+    };
+
+    return date.toLocaleTimeString("en-US", options);
+  } catch (error) {
+    return timeString;
+  }
+};
