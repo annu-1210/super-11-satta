@@ -1,4 +1,3 @@
-// hooks/useSheetData.js
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -11,9 +10,8 @@ const useSheetData = (sheetName) => {
 
     const fetchData = async () => {
       try {
-        const res = await axios.get(
-          `/api/macros/s/AKfycbwUcfPNJISjLKe7FPhj6MPZXtCQl-tbiX6mWA9qm_em-Um_Yl-CGfGDr4oyopZLXrZe/exec?sheet=${sheetName}`
-        );
+        const baseUrl = import.meta.env.VITE_SHEET_API; 
+        const res = await axios.get(`${baseUrl}?sheet=${sheetName}`);
         setData(res.data?.data || []);
       } catch (err) {
         console.error("Error fetching data for:", sheetName, err);
@@ -26,6 +24,7 @@ const useSheetData = (sheetName) => {
     fetchData();
   }, [sheetName]);
 
+  console.log("API Base URL:", import.meta.env.VITE_SHEET_API);
   return { data, loading };
 };
 
