@@ -13,7 +13,13 @@ function Navbar() {
             <Link to="/chart">Chart</Link>
           </li>
           <li className="hover:underline transition duration-300 ease-in-out">
-            <Link to="/">Play Now</Link>
+            <Link
+              to="https://wa.me/+917015916793"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Play Now
+            </Link>
           </li>
           <li className="hover:underline transition duration-300 ease-in-out">
             <Link to="/">LOGIN</Link>

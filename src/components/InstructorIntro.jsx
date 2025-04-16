@@ -18,7 +18,11 @@ function InstructorIntro() {
         <p>
           <strong>S.K Bhai</strong>
         </p>
-        <a href="/">
+        <a
+          href="https://wa.me/+917015916793"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="./images/whatsapp-button.png"
             alt="connect on Whatsapp"

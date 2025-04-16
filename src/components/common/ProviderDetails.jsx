@@ -47,7 +47,11 @@ function ProviderDetails({ providerName }) {
             <strong>Game Play करने के लिये नीचे लिंक पर क्लिक करे</strong>
           </p>
           <div className="flex flex-col items-center justify-center w-full space-y-5">
-            <a href="/">
+            <a
+              href="https://wa.me/+917015916793"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="./images/whatsapp-button.png"
                 alt="connect on Whatsapp"

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -6,9 +7,9 @@ function Footer() {
       <div className="flex flex-col items-center justify-center w-full">
         <div className="w-full flex items-center justify-center sm:justify-end h-[100px] pr-2">
           <ul className="flex flex-col sm:flex-row flex-wrap items-center !justify-center md:justify-start text-white sm:mr-4 text-base sm:text-lg space-y-1 sm:space-x-6 ">
-            <a href="/">
+            <Link to="/chart">
               <li className="hover:underline">Chart</li>
-            </a>
+            </Link>
             <a href="/">
               <li className="hover:underline">Privacy Policy</li>
             </a>
