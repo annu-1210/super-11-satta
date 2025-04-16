@@ -43,9 +43,9 @@ const YearRecords = () => {
       </div>
 
       {loading ? (
-        <p className="text-center text-gray-500">Loading...</p>
+        <p className="text-center text-light-gray">Loading...</p>
       ) : data.length === 0 ? (
-        <p className="text-center text-red-500">No data found.</p>
+        <p className="text-center text-dark-muted-red">No data found.</p>
       ) : (
         <div className="overflow-auto">
           <table className="min-w-full table-auto border border-collapse text-sm text-white">

@@ -7,7 +7,6 @@ function LiveClock() {
     const interval = setInterval(() => {
       const now = new Date();
 
-      // Get parts manually
       const options = { timeZone: "Asia/Kolkata" };
       const dateTimeInIndia = new Date(now.toLocaleString("en-US", options));
 
@@ -21,7 +20,7 @@ function LiveClock() {
       const ampm = hours >= 12 ? "PM" : "AM";
 
       hours = hours % 12;
-      hours = hours ? hours : 12; // the hour '0' should be '12'
+      hours = hours ? hours : 12;
       const formattedHours = hours.toString().padStart(2, "0");
 
       const formattedDateTime = `${month} ${day}, ${year} ${formattedHours}:${minutes}:${seconds} ${ampm}`;

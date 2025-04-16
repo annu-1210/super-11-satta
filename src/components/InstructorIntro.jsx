@@ -19,7 +19,7 @@ function InstructorIntro() {
           <strong>S.K Bhai</strong>
         </p>
         <a
-          href="https://wa.me/+917015916793"
+          href="https://wa.me/+917400036022"
           target="_blank"
           rel="noopener noreferrer"
         >

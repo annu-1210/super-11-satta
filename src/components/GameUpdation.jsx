@@ -21,7 +21,9 @@ function GameUpdation() {
         </div>
         <div className="flex flex-col items-center justify-center w-full">
           <p>{resultGame}</p>
-          <span className="text-2xl lg:text-3xl font-bold lead ">{currentResult}</span>
+          <span className="text-2xl lg:text-3xl font-bold lead ">
+            {currentResult}
+          </span>
         </div>
       </div>
     </div>

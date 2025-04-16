@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["Roboto", "sans-serif"], // Add Roboto here
+        roboto: ["Roboto", "sans-serif"], 
       },
       colors: {
         "sky-blue": "rgb(96, 165, 250)",

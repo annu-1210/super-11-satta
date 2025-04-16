@@ -10,8 +10,8 @@ function ResultChart() {
       >
         APRIL RESULT CHART 2025
       </h3>
-      <ResultChartTable sheetName="AprilChart_Data1"/>
-      <ResultChartTable sheetName="AprilChart_Data2"/>
+      <ResultChartTable sheetName="AprilChart_Data1" />
+      <ResultChartTable sheetName="AprilChart_Data2" />
     </section>
   );
 }

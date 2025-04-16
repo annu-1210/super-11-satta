@@ -48,7 +48,7 @@ function ProviderDetails({ providerName }) {
           </p>
           <div className="flex flex-col items-center justify-center w-full space-y-5">
             <a
-              href="https://wa.me/+917015916793"
+              href="https://wa.me/+917400036022"
               target="_blank"
               rel="noopener noreferrer"
             >
