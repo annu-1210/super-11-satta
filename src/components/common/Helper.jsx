@@ -162,3 +162,26 @@ export const formatTime = (timeString) => {
     return timeString;
   }
 };
+
+export const getCurrentMonthName = () => {
+  const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const currentDate = new Date();
+  return monthNames[currentDate.getMonth()];
+};
+
+export const getCurrentYear = () => {
+  return new Date().getFullYear();
+};
