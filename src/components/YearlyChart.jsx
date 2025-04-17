@@ -8,10 +8,7 @@ const YearlyChart = () => {
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    // if (!selectedLocation || !selectedYear) return alert("Please select both");
-    // if (selectedLocation && selectedYear) {
     navigate(`/year-records?location=${selectedLocation}&year=${selectedYear}`);
-    //   }
   };
 
   return (

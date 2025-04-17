@@ -24,7 +24,7 @@ const useSheetData = (sheetName) => {
     fetchData();
   }, [sheetName]);
 
-  console.log("API Base URL:", import.meta.env.VITE_SHEET_API);
+  // console.log("API Base URL:", import.meta.env.VITE_SHEET_API);
   return { data, loading };
 };
 

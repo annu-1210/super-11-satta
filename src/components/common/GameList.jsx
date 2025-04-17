@@ -8,7 +8,7 @@ function GameList({ sheetName = "Game_List1" }) {
   const currentYear = new Date().getFullYear();
 
   const { data, loading } = useSheetData(sheetName);
-  console.log("Game List Data:", data);
+  // console.log("Game List Data:", data);
 
   if (loading) return <p className="text-center text-black py-4">Loading...</p>;
 
