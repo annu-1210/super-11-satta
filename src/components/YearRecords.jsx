@@ -44,9 +44,9 @@ const YearRecords = () => {
       </div>
 
       {loading ? (
-        <p className="text-center text-gray-500">Loading...</p>
+        <p className="text-center text-secondary">Loading...</p>
       ) : data.length === 0 ? (
-        <p className="text-center text-red-500">No data found.</p>
+        <p className="text-center text-dark-muted-red">No data found.</p>
       ) : (
         <div className="overflow-x-auto">
           <table className="w-full min-w-[1000px] text-sm text-center border-collapse">
@@ -84,14 +84,14 @@ const YearRecords = () => {
                   key={i}
                   className="even:bg-white transition-all hover:cursor-pointer"
                 >
-                  <td className="px-4 py-2 font-semibold text-gray-800 border border-gray-300">
+                  <td className="px-4 py-2 font-semibold text-gray-800 border border-light-gray">
                     {row.Date}
                   </td>
 
                   {months.map((month) => (
                     <td
                       key={month}
-                      className="px-4 py-2 font-semibold text-gray-800 border border-gray-300"
+                      className="px-4 py-2 font-semibold text-gray-800 border border-light-gray"
                     >
                       {row[month] || "-"}
                     </td>

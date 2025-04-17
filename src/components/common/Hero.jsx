@@ -29,7 +29,7 @@ function Hero() {
       <div className="w-full flex flex-col items-center justify-center space-y-2 ">
         <div className="flex w-full bg-custom-gradient3 flex-col items-center justify-center space-y-2 sm:space-y-3 text-center text-black text-lg font-bold p-2 sm:p-4 shadow-lg border border-gray-300">
           <Navbar />
-          <h3 className="uppercase text-creamy-texture tracking-widest text-xl md:text-2xl">
+          <h3 className="uppercase text-creamyTexture tracking-widest text-xl md:text-2xl">
             Welcome to super-11-satta
           </h3>
           <p className="text-glassMedium text-xl">
