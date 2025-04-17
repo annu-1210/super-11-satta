@@ -25,11 +25,11 @@ function Hero() {
 
   const formattedTime = formatTime(time);
   return (
-    <section className="w-full flex items-center justify-center bg-transparent mx-auto ">
-      <div className="w-full flex flex-col items-center justify-center space-y-2">
-        <div className="flex w-full bg-custom-gradient3 flex-col items-center justify-center space-y-2 sm:space-y-3 text-center text-black text-lg font-bold py-2 sm:py-4 shadow-lg border border-gray-300">
+    <section className="w-full flex items-center justify-center bg-transparent mx-auto">
+      <div className="w-full flex flex-col items-center justify-center space-y-2 ">
+        <div className="flex w-full bg-custom-gradient3 flex-col items-center justify-center space-y-2 sm:space-y-3 text-center text-black text-lg font-bold p-2 sm:p-4 shadow-lg border border-gray-300">
           <Navbar />
-          <h3 className="uppercase text-creamy-texture tracking-widest text-2xl">
+          <h3 className="uppercase text-creamy-texture tracking-widest text-xl md:text-2xl">
             Welcome to super-11-satta
           </h3>
           <p className="text-glassMedium text-xl">

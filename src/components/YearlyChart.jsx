@@ -35,7 +35,6 @@ const YearlyChart = () => {
             onChange={(e) => setSelectedYear(e.target.value)}
             className="px-2 py-2 mx-0 ml-1 text-sm bg-white rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 max-h-28 overflow-y-auto outline-none md:py-3 md:text-base lg:mx-3"
           >
-            {/* <option value="">Select Year</option> */}
             {[2025, 2024, 2023].map((year) => (
               <option key={year} value={year}>
                 {year}
@@ -45,8 +44,7 @@ const YearlyChart = () => {
         </div>
         <button
           onClick={handleSubmit}
-          // px-5 py-3 border-none text-white text-sm md:text-[17px] rounded-md tracking-[4px] font-bold uppercase transition-shadow duration-500 bg-light-blue shadow-[0_0_25px_#008cff]
-          className=" !rounded-lg text-center flex items-center justify-center !text-ironGray bg-transparent h-[30px] xsm:h-[32px] md:h-[38px] lg:h-[42px] xl:h-[46px] gap-2.5 gradient-border3 transition-colors duration-500 hover:bg-transparent  hover:!text-primary w-[296px] !h-10 xsm:!h-12 !h-14 px-4 xsm:px-5 md:px-6 py-2.5 xsm:py-3 md:py-3.5 !text-base xsm:!text-lg sm:!text-xl xl:!text-2xl
+          className=" rounded-lg text-center flex items-center justify-center bg-transparent !h-[38px] lg:!h-[42px] xl:!h-[46px] gradient-border3 transition-colors duration-500 hover:bg-transparent hover:!text-primary w-[150px] lg:w-[180px] xl:w-[296px] !h-10 xsm:!h-12 !h-14 px-4 xsm:px-5 md:px-6 py-2 xsm:py-3 md:py-3.5 text-base xsm:text-lg sm:text-xl xl:text-2xl
         "
         >
           Check Chart

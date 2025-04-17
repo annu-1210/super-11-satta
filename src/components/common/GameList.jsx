@@ -15,9 +15,11 @@ function GameList({ sheetName = "Game_List1" }) {
   return (
     <section className="w-full flex items-center justify-center bg-transparent my-6">
       <div className="w-full overflow-x-auto flex  flex-col items-center justify-center space-y-4">
-        <h2 className="uppercase text-4xl font-bold">Check New Data</h2>
+        <h2 className="uppercase text-2xl md:text-4xl font-bold">
+          Check New Data
+        </h2>
         <div className="w-full overflow-x-auto">
-          <table className="w-full min-w-[600px] border-collapse border border-gray-300 text-center">
+          <table className="w-full min-w-[450px] border-collapse border border-gray-300 text-center">
             <thead className="bg-primary text-white">
               <tr>
                 <th className="p-3 bg-tertiary font-bold">GAME LIST</th>
@@ -32,7 +34,7 @@ function GameList({ sheetName = "Game_List1" }) {
                   <tr key={index} className="border-b border-gray-300">
                     <td className="p-4 flex flex-col items-start space-y-1">
                       <p
-                        className="text-xl font-bold tracking-wide uppercase hover:underline cursor-pointer"
+                        className="text-base md:text-xl font-bold tracking-wide uppercase hover:underline cursor-pointer"
                         onClick={() =>
                           navigate(
                             `/year-records?location=${encodeURIComponent(

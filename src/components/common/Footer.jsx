@@ -31,10 +31,9 @@ function Footer() {
             website is made for entertainment purpose only
           </p>
         </div>
-        <div className="flex items-center justify-center space-x-1 text-sm text-white sm:text-center ">
-          <span> &copy;</span>
+        <div className="flex flex-col xsm:flex-row items-center justify-center space-x-3 text-sm text-white sm:text-center w-full">
           <a href="/" className="hover:underline ">
-            super-11-satta.com&trade;.{" "}
+            &copy; super-11-satta.com&trade;.{" "}
           </a>
           <p> All Rights Reserved.</p>
         </div>

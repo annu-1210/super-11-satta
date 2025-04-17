@@ -2,11 +2,11 @@ import React from "react";
 
 function AboutSattaKing({ aboutSattaKingData, aboutSattaKingDescription }) {
   return (
-    <article className="w-full flex flex-col items-center justify-center bg-transparent mt-2 sm:mt-0 relative z-50 opacity-100">
-      <h3 className="bg-transparent flex items-center justify-start text-base sm:text-[19.2px] py-4 px-4 sm:px-6 w-full text-secondary">
+    <article className="w-full flex flex-col items-center justify-center bg-transparent relative z-50 opacity-100 space-y-3 p-2 ">
+      <h3 className="bg-transparent flex items-center justify-start text-base sm:text-[19.2px] mt-4 md:mt-8 w-full text-secondary">
         <strong>{aboutSattaKingData.heading}</strong>
       </h3>
-      <div className="flex flex-col p-[9.6px] text-sm sm:text-base">
+      <div className="flex flex-col text-sm sm:text-base">
         <p>{aboutSattaKingData.info}</p>
         {aboutSattaKingDescription &&
           aboutSattaKingDescription.map((item, index) => (

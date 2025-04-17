@@ -4,7 +4,7 @@ import { aboutSattaKing } from "./common/Helper";
 
 function AboutSection() {
   return (
-    <section className="w-full flex items-center justify-center relative p-8 my-16 shadow-xl overflow-hidden ">
+    <section className="w-full flex items-center justify-center relative p-1 md:p-8 my-16 shadow-xl overflow-hidden ">
       <div className="absolute inset-0 bg-custom-gradient4 opacity-20 "></div>
       <div className="w-full flex flex-col items-center justify-center relative z-50 opacity-100">
         <AboutSattaKing aboutSattaKingData={aboutSattaKing[0]} />
