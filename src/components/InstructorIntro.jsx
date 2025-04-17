@@ -16,7 +16,7 @@ function InstructorIntro() {
       </div>
       <div className="flex flex-col items-center justify-center w-full text-center">
         <p>
-          <strong>S.K Bhai</strong>
+          <strong>Pawan Bhai</strong>
         </p>
         <a
           href="https://wa.me/+917082450947"
