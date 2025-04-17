@@ -1,67 +1,95 @@
 import React from "react";
 import { listTiming } from "./Helper";
+import BarsLine from "./BarsLine";
 
-function ProviderDetails({ providerName }) {
+function ProviderDetails() {
   return (
-    <section className="w-full flex items-center justify-center bg-yellow-cream py-2 shadow-xl border pt-4 mx-2 my-5 sm:my-2 rounded-xl leading-6 h-fit border">
+    <section className="w-full flex items-center justify-center bg-yellow-cream shadow-xl border py-4 mx-2 my-5 sm:my-2 rounded-xl leading-6 h-fit border">
       <div className="flex flex-col items-center justify-center w-full">
         <div className="flex flex-col items-center justify-center w-full">
           <h4>
-            <strong>सीधे सट्टा कंपनी का No 1 खाईवाल</strong>
+            <strong>😊आपका भरोसा हमारी पहचान है😊</strong>
           </h4>
-          <p>
+          <h4>
+            <strong>🔰ऑनलाईन खाईवाल🔰</strong>
+          </h4>
+        </div>
+        <div className="flex flex-col items-center justify-center mt-4">
+          <p className="text-center">
             <strong>
               {" "}
-              ✰✰
-              <span className="text-dark-muted-red">{providerName}</span>
-              ✰✰
+              ✔
+              <span className="text-dark-muted-red font-bold uppercase">
+                {" "}
+                Pawan Bhai trusted
+              </span>{" "}
+              ✔
             </strong>
           </p>
+          <div className="flex space-x-0.5 mt-2">
+            <BarsLine />
+          </div>
+          <div className="flex flex-col items-start justify-start ">
+            {listTiming.map((timing, index) => (
+              <p key={index} className="text-start ">
+                <span className="text-2xl text-charcoal-gray">🎙</span>
+                <strong className="font-bold">{timing}</strong>
+              </p>
+            ))}
+          </div>
+
+          <div className="flex space-x-0.5 mt-1">
+            <BarsLine />
+          </div>
+          <h5>
+            <strong>𝗚𝗔𝗠𝗘 𝗣𝗔𝗦𝗦𝗜𝗡𝗚 𝗥𝗔𝗧𝗘</strong>
+          </h5>
+          <p>
+            <strong>➧ 𝗝𝗢𝗗𝗜 10 के  960💸</strong>
+          </p>
+          <p>
+            <strong>➧ 𝗛𝗥𝗙 100 के 960💸</strong>
+          </p>
+          <div className="flex space-x-0.5 mt-2">
+            <BarsLine />
+          </div>
+          <p className="mt-2">
+            <strong>✅*Game play करने के लिये नीचे क्लिक करे</strong>
+          </p>
+          <a
+            href="https://wa.me/+917082450947"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="./images/whatsapp-button.png"
+              alt="connect on Whatsapp"
+              height={52}
+              width={150}
+            />
+          </a>
         </div>
-        <div className="flex flex-col items-center justify-center w-full">
-          {listTiming.map((timing, index) => (
-            <p key={index} className="text-center w-full">
-              <strong>{timing}</strong>
-            </p>
-          ))}
-        </div>
-        <div className="flex flex-col items-center justify-center w-full">
-          <p>
-            <strong>जोड़ी रेट</strong>
-          </p>
-          <p>
-            <strong>जोड़ी रेट 10-------960</strong>
-          </p>
-          <p>
-            <strong>हरूफ रेट 100-----960</strong>
-          </p>
-          <p>
+
+        <div className="flex flex-col items-center justify-center mt-4 space-y-2">
+          <p className="">
             <strong>
-              {" "}
-              ✰✰
-              <span className="text-dark-muted-red">{providerName}</span>
-              ✰✰
+              ✅ जिस भाई की गेम डिलीट
+              <br /> पाई गई तो कोई पैसे नहीं मिलेंगे✅
             </strong>
           </p>
-          <p className="px-2 sm:px-0 text-center">
-            <strong>Game Play करने के लिये नीचे लिंक पर क्लिक करे</strong>
+          <div className="flex space-x-0.5 ">
+            <BarsLine />
+          </div>
+          <p className="">
+            <strong>
+              &reg;NOTE जरूरी सूचना एक पर्ची में सिंगल नंबर की  पासिंग मिलेगी
+              डबल नंबर कि नहीं मिलेगी
+              <br /> 🌹नोट=केवल 🆗 गेम का ही हिसाब किताब किया जाएगा, चाहे आपकी
+              पेमेंट प्लस हो
+            </strong>
           </p>
-          <div className="flex flex-col items-center justify-center w-full space-y-5">
-            <a
-              href="https://wa.me/+917400036022"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="./images/whatsapp-button.png"
-                alt="connect on Whatsapp"
-                height={52}
-                width={150}
-              />
-            </a>
-            <p>
-              <strong>Click to chat</strong>
-            </p>
+          <div className="flex space-x-0.5 ">
+            <BarsLine />
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ function Footer() {
               <li className="hover:underline">Terms & Conditions</li>
             </Link>
             <Link
-              to="https://wa.me/+917400036022"
+              to="https://wa.me/+917082450947"
               target="_blank"
               rel="noopener noreferrer"
             >

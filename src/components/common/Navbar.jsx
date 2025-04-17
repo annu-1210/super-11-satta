@@ -14,7 +14,7 @@ function Navbar() {
           </li>
           <li className="hover:underline transition duration-300 ease-in-out">
             <Link
-              to="https://wa.me/+917400036022"
+              to="https://wa.me/+917082450947"
               target="_blank"
               rel="noopener noreferrer"
             >

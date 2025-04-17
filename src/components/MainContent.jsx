@@ -11,11 +11,11 @@ function MainContent() {
   return (
     <section className="w-full flex flex-col items-center justify-center bg-transparent pb-4">
       <Results />
-      <ProviderDetails providerName=" Jitu Bhai  KHAIWAL" />
+      <ProviderDetails />
       <GameList sheetName="Game_List1" />
       <GameList sheetName="Game_List2" />
       <YearlyChart />
-      <ProviderDetails providerName="  Monu Bhai KHAIWAL" />
+      <ProviderDetails />
       <ResultChart />
       <AboutSection />
       <ImportantNews />
