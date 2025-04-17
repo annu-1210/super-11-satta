@@ -1,7 +1,7 @@
 import React from "react";
-import useSheetData from "../hooks/useSheetData";
+import useSheetData from "../../hooks/useSheetData";
 import { useNavigate } from "react-router-dom";
-import { formatTime } from "./common/Helper";
+import { formatTime } from "./Helper";
 
 function GameList({ sheetName = "Game_List1" }) {
   const navigate = useNavigate();

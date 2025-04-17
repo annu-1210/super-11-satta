@@ -3,7 +3,7 @@ import Results from "./Results";
 import ProviderDetails from "./common/ProviderDetails";
 import AboutSection from "./AboutSection";
 import ImportantNews from "./ImportantNews";
-import GameList from "./GameList";
+import GameList from "./common/GameList";
 import ResultChart from "./ResultChart";
 import YearlyChart from "./YearlyChart";
 
