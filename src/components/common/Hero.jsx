@@ -2,6 +2,7 @@ import React from "react";
 import LiveClock from "../LiveClock";
 import GameUpdation from "../GameUpdation";
 import InstructorIntro from "../InstructorIntro";
+import Navbar from "./Navbar";
 import { FaArrowRight } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 import useSheetData from "../../hooks/useSheetData";
@@ -24,20 +25,24 @@ function Hero() {
 
   const formattedTime = formatTime(time);
   return (
-    <section className="w-full flex items-center justify-center bg-transparent mt-6 sm:mt-0">
+    <section className="w-full flex items-center justify-center bg-transparent mx-auto ">
       <div className="w-full flex flex-col items-center justify-center space-y-2">
-        <div className="flex flex-col items-center justify-center space-y-1 sm:space-y-2 text-center text-black text-lg font-bold">
-          <h3 className="uppercase">Welcome to super-11-satta</h3>
-          <p>
+        <div className="flex w-full bg-custom-gradient3 flex-col items-center justify-center space-y-2 sm:space-y-3 text-center text-black text-lg font-bold py-2 sm:py-4 shadow-lg border border-gray-300">
+          <Navbar />
+          <h3 className="uppercase text-creamy-texture tracking-widest text-2xl">
+            Welcome to super-11-satta
+          </h3>
+          <p className="text-glassMedium text-xl">
             <LiveClock />
           </p>
-        </div>
-        <div className="flex flex-col items-center justify-center space-y-4 w-full">
-          <GameUpdation />
-          {!isYearRecord && isHome && <InstructorIntro />}
+
+          <div className="flex flex-col items-center justify-center space-y-4 w-full">
+            <GameUpdation />
+            {!isYearRecord && isHome && <InstructorIntro />}
+          </div>
         </div>
         {!isYearRecord && !isPrivacyPolicy && !isTermsConditions && (
-          <div className="flex flex-col items-center justify-center w-full pt-4 sm:pt-1">
+          <div className="flex flex-col items-center justify-center w-full pt-4">
             <div className="flex flex-col items-center justify-center w-full">
               <p className="text-lg sm:text-xl font-bold uppercase">
                 {resultGame}
@@ -56,15 +61,15 @@ function Hero() {
               </div>
             </div>
             {isHome && (
-              <h4 className="bg-yellow-cream w-full max-w-[1264px] flex items-center justify-center text-center text-black shadow-xl border rounded-xl leading-6 font-semibold h-fit px-1 sm:px-4 sm:pt-4 py-2 mx-0 sm:mx-2 mt-6 sm:mt-2 my-2 leading-6 border-transparent rounded-none font-normal shadow-none text-sm sm:text-lg">
-                To Check instant A11 SATTA KING Results , Check Below Chart 👇🏿
+              <h4 className="w-full max-w-[1264px] flex items-center justify-center text-center text-ironGray shadow-xl border rounded-xl leading-6 font-semibold h-fit px-1 sm:px-4 sm:pt-4 py-2 mx-0 sm:mx-2 mt-6 sm:mt-6 my-2 leading-6 border-transparent rounded-none font-normal shadow-none text-sm sm:text-lg">
+                To Check instant A11 SATTA KING Results , Check Below Chart  👇🏻
               </h4>
             )}
 
             {isChart && (
-              <h4 className="bg-yellow-cream w-full max-w-[1264px] flex items-center justify-center text-center text-black shadow-xl border rounded-xl leading-6 font-semibold h-fit px-1 sm:px-4 sm:pt-4 py-2 mx-0 sm:mx-2 mt-6 sm:mt-2 my-2 leading-6 border-transparent rounded-none font-normal shadow-none text-sm sm:text-lg">
+              <h4 className="w-full max-w-[1264px] flex items-center justify-center text-center text-ironGray shadow-xl border rounded-xl leading-6 font-semibold h-fit px-1 sm:px-4 sm:pt-4 py-2 mx-0 sm:mx-2 mt-6 sm:mt-6 my-2 leading-6 border-transparent rounded-none font-normal shadow-none text-sm sm:text-lg">
                 To Check instant SATTA KING DELHI 6 Results , Check Below Chart
-                👇🏿
+                👇🏻
               </h4>
             )}
           </div>

@@ -4,8 +4,8 @@ import BarsLine from "./BarsLine";
 
 function ProviderDetails({providerName, whtsappNumber}) {
   return (
-    <section className="w-full flex items-center justify-center bg-yellow-cream shadow-xl border py-4 px-2 mx-2 my-5 sm:my-2 rounded-xl leading-6 h-fit border">
-      <div className="flex flex-col items-center justify-center w-full">
+    <section className="w-full max-w-4xl flex items-center justify-center bg-white shadow-xl border py-4 px-2 mx-2 my-5 sm:my-10  leading-6 h-fit border text-secondary">
+      <div className="flex flex-col items-center justify-center w-full z-10">
         <div className="flex flex-col items-center justify-center w-full">
           <h4>
             <strong>😊आपका भरोसा हमारी पहचान है😊</strong>

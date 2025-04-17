@@ -11,7 +11,7 @@ import TermsAndConditions from "./components/TermsAndConditions";
 
 function App() {
   return (
-    <div className="max-w-7xl px-2 sm:px-6 xl:px-0 mx-auto flex flex-col items-center justify-center font-roboto">
+    <div className="max-w-[1920px] px-2 sm:px-6 xl:px-10 mx-auto flex flex-col items-center justify-center font-montserrat !bg-bodyBg">
       <Header />
       <Hero />
       <Routes>

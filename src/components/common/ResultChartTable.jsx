@@ -14,20 +14,23 @@ function ResultChartTable({ sheetName = "Chart_Data1" }) {
 
   if (loading) return <p className="text-center text-black py-4">Loading...</p>;
 
-  const headers =
-    Array.isArray(data) && data.length > 0 ? Object.keys(data[0]) : [];
+  const headers = Array.isArray(data) && data.length > 0 ? Object.keys(data[0]) : [];
 
   return (
     <div className="w-full overflow-x-auto">
-      <table className="w-full text-sm text-left text-gray-500 border-separate min-w-full table-auto whitespace-nowrap sm:table-fixed">
+      <table className="w-full text-sm text-center table-auto md:table-fixed border-collapse min-w-[800px]">
         <thead>
           <tr>
             {headers.map((key) => (
               <th
                 key={key}
-                className="py-3 bg-seafoam-green shadow-custom-inset1 sticky rounded-lg lg:rounded-xl left-0 z-20 text-center sm:text-left px-3 lg:pl-8 text-[12px] lg:text-base font-bold text-white"
+                className="px-4 py-3 text-white font-bold text-[14px] lg:text-base"
+                style={{
+                  background: "rgba(233, 78, 27, 1)", 
+                  boxShadow: "inset -3px -3px 5px rgba(0,0,0,0.3), inset 3px 3px 5px rgba(255,255,255,0.1)", 
+                }}
               >
-                <strong>{key}</strong>
+                {key.toUpperCase()}
               </th>
             ))}
           </tr>
@@ -35,13 +38,16 @@ function ResultChartTable({ sheetName = "Chart_Data1" }) {
 
         <tbody>
           {data.map((row, idx) => (
-            <tr key={idx}>
+            <tr
+              key={idx}
+              className=" even:bg-white hover:bg-[#e94e1b]/50 transition-all"
+            >
               {headers.map((key) => (
                 <td
                   key={key}
-                  className="text-white text-left sticky left-0 z-20 sm:px-6 px-3 lg:py-4 py-3 bg-dusty-navy shadow-custom-inset2 text-sm font-semibold whitespace-nowrap lg:text-base rounded-lg"
+                  className="px-4 py-3 font-semibold text-secondary text-[13px] lg:text-[15px] border border-gray-300"
                 >
-                  {key === "Date" ? formatDate(row[key]) : row[key]}
+                  {key === "Date" ? formatDate(row[key]) : row[key] ?? "-"}
                 </td>
               ))}
             </tr>

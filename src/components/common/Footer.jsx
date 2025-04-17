@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="w-full bg-cold-blue flex items-center justify-center text-white shadow p-4 lg:px-6 lg:py-8 ">
+    <footer className="w-full bg-secondary flex items-center justify-center text-white shadow p-4 lg:px-6 lg:py-8 ">
       <div className="flex flex-col items-center justify-center w-full">
-        <div className="w-full flex items-center justify-center sm:justify-end h-[100px] pr-2">
+        <div className="w-full flex items-center justify-center h-[100px] pr-2">
           <ul className="flex flex-col sm:flex-row flex-wrap items-center justify-center md:justify-start text-white sm:mr-4 text-base sm:text-lg space-y-1 sm:space-y-0 sm:space-x-6 ">
             <Link to="/chart">
               <li className="hover:underline">Chart</li>
@@ -21,11 +21,11 @@ function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <li className="hover:underline">Connect</li>
+              <li className="hover:underline">Connect With Us</li>
             </Link>
           </ul>
         </div>
-        <div className="w-full flex items-center justify-center border-y border-lighter-gray mt-4 lg:mt-8 md:pt-8 p-4 md:pb-4 mb-4">
+        <div className="w-full flex items-center justify-center border-y border-lighter-gray mt-4 lg:mt-8 md:py-8 p-4 mb-4">
           <p className="text-sm text-center text-light-red ">
             This website does not promote any kind of satta activities. This
             website is made for entertainment purpose only

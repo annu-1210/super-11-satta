@@ -2,8 +2,8 @@ import React from "react";
 
 function AboutSattaKing({ aboutSattaKingData, aboutSattaKingDescription }) {
   return (
-    <article className="w-full flex flex-col items-center justify-center bg-transparent mt-2 sm:mt-0">
-      <h3 className="bg-cold-blue flex items-center justify-center text-base sm:text-[19.2px] py-4 px-4 sm:px-6 w-full text-white">
+    <article className="w-full flex flex-col items-center justify-center bg-transparent mt-2 sm:mt-0 relative z-50 opacity-100">
+      <h3 className="bg-transparent flex items-center justify-start text-base sm:text-[19.2px] py-4 px-4 sm:px-6 w-full text-secondary">
         <strong>{aboutSattaKingData.heading}</strong>
       </h3>
       <div className="flex flex-col p-[9.6px] text-sm sm:text-base">

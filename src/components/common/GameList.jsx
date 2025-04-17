@@ -13,33 +13,26 @@ function GameList({ sheetName = "Game_List1" }) {
   if (loading) return <p className="text-center text-black py-4">Loading...</p>;
 
   return (
-    <section className="w-full flex items-center justify-center bg-transparent mb-6">
-      <div className="w-full">
-        <div className="w-full flex space-x-4 bg-yellow">
-          <p className="w-full p-3 font-bold text-white bg-purple">GAME LIST</p>
-          <div className="flex items-center justify-around w-[75%]">
-            <p className="text-lg font-semibold">कल</p>
-            <p className="text-lg font-semibold">आज</p>
-          </div>
-        </div>
-        <div className="w-full flex items-center justify-center bg-transparent">
-          <div className="grid grid-cols-1 bg-white lg:grid-cols-3 md:grid-cols-2 w-full">
-            {Array.isArray(data) &&
-              data.map((game, index) => (
-                <div
-                  className="flex items-center justify-around space-x-4 border border-gray-900 w-full"
-                  key={index}
-                >
-                  <div className="w-full p-3">
-                    <p className="pb-2 text-xl font-bold tracking-wide !text-gray-900 uppercase cursor-pointer text-start hover:underline hover:text-black">
-                      {game.Name}
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <p className="text-sm font-semibold text-dark-red">
-                        {formatTime(game.Time)}
-                      </p>
-                      <button
-                        className="px-2 text-xs bg-yellow py-0.5 rounded-md hover:bg-light-yellow"
+    <section className="w-full flex items-center justify-center bg-transparent my-6">
+      <div className="w-full overflow-x-auto flex  flex-col items-center justify-center space-y-4">
+        <h2 className="uppercase text-4xl font-bold">Check New Data</h2>
+        <div className="w-full overflow-x-auto">
+          <table className="w-full min-w-[600px] border-collapse border border-gray-300 text-center">
+            <thead className="bg-primary text-white">
+              <tr>
+                <th className="p-3 bg-tertiary font-bold">GAME LIST</th>
+                <th className="p-3 font-bold">कल</th>
+                <th className="p-3 font-bold">आज</th>
+              </tr>
+            </thead>
+
+            <tbody className="text-black">
+              {Array.isArray(data) &&
+                data.map((game, index) => (
+                  <tr key={index} className="border-b border-gray-300">
+                    <td className="p-4 flex flex-col items-start space-y-1">
+                      <p
+                        className="text-xl font-bold tracking-wide uppercase hover:underline cursor-pointer"
                         onClick={() =>
                           navigate(
                             `/year-records?location=${encodeURIComponent(
@@ -48,31 +41,46 @@ function GameList({ sheetName = "Game_List1" }) {
                           )
                         }
                       >
-                        View Chart
-                      </button>
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-around w-[75%] !text-2xl font-medium tracking-wider">
-                    {game.Yesterday ?? (
-                      <p className="!text-2xl font-medium tracking-wider">
-                        {game.Yesterday}
+                        {game.Name}
                       </p>
-                    )}
-                    {game.isTodayAvailable ? (
-                      <p className="text-2xl font-medium tracking-wider">
-                        {game.Today}
-                      </p>
-                    ) : (
-                      <img
-                        src="/wait-button.gif"
-                        alt="WAIT"
-                        className="h-10 w-10 lg:mx-auto"
-                      />
-                    )}
-                  </div>
-                </div>
-              ))}
-          </div>
+                      <div className="flex items-center justify-between w-full">
+                        <p className="text-sm font-semibold text-dark-red">
+                          {formatTime(game.Time)}
+                        </p>
+                        <button
+                          className="p-2 text-xs bg-tertiary rounded-md hover:bg-primary ml-2 text-white"
+                          onClick={() =>
+                            navigate(
+                              `/year-records?location=${encodeURIComponent(
+                                game.Name
+                              )}&year=${currentYear}`
+                            )
+                          }
+                        >
+                          View Chart
+                        </button>
+                      </div>
+                    </td>
+
+                    <td className="p-4 text-2xl font-medium tracking-wider">
+                      {game.Yesterday ?? "-"}
+                    </td>
+
+                    <td className="p-4 text-2xl font-medium tracking-wider">
+                      {game.isTodayAvailable ? (
+                        <span>{game.Today}</span>
+                      ) : (
+                        <img
+                          src="/wait-button.gif"
+                          alt="WAIT"
+                          className="h-10 w-10 mx-auto"
+                        />
+                      )}
+                    </td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </section>

@@ -2,3 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .custom-gradient-border {
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px; /* Adjust as needed */
+      border-radius: 8px;
+      background: linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%);
+      transition: background 0.3s ease-in-out;
+    }
+  
+    .custom-gradient-border:hover {
+      background: transparent;
+    }
+  
+    .custom-gradient-border::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 1px;
+      border-radius: inherit;
+      background: linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%);
+      -webkit-mask: linear-gradient(white, white) content-box,
+        linear-gradient(white, white);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  
+    .custom-gradient-border:hover::before {
+      opacity: 1;
+    }
+  }
+
+  @layer components {
+    .gradient-border {
+      position: relative;
+      backdrop-filter: blur(6px);
+    }
+  
+    .gradient-border::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 1px;
+      backdrop-filter: blur(6px);
+      border-radius: inherit;
+      background: linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%);
+      -webkit-mask: linear-gradient(white, white) content-box,
+        linear-gradient(white, white);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+  }
+
+  @layer components {
+    .gradient-border3 {
+      position: relative;
+    }
+  
+    .gradient-border3::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 1px;
+      border-radius: inherit;
+      background: linear-gradient(101.49deg, #e94e1b 0.92%, #fdc801 96.93%);
+      -webkit-mask: linear-gradient(white, white) content-box,
+        linear-gradient(white, white);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+  }

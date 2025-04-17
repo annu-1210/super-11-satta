@@ -2,8 +2,9 @@ import React from "react";
 
 function InstructorIntro() {
   return (
-    <div className="bg-lavender w-full flex flex-col items-center justify-center border-dotted border-[5px] border-black space-y-6 ">
-      <div className="flex flex-col items-center justify-center w-full text-center text-[13px] sm:text-sm md:text-base">
+    // bg-lavender  border-dotted border-[5px] border-black 
+    <div className="w-full flex flex-col items-center justify-center space-y-6 !mt-12">
+      <div className="flex flex-col items-center justify-center w-full text-center text-creamy-texture text-[13px] sm:text-sm md:text-base">
         <h4>
           <strong> नमस्कार साथियों </strong>
         </h4>
@@ -14,8 +15,8 @@ function InstructorIntro() {
           </strong>
         </p>
       </div>
-      <div className="flex flex-col items-center justify-center w-full text-center">
-        <p>
+      <div className="flex flex-col items-center justify-center w-full text-center space-y-2">
+        <p className="text-white text-xl">
           <strong>Pawan Bhai</strong>
         </p>
         <a
@@ -28,7 +29,7 @@ function InstructorIntro() {
             alt="connect on Whatsapp"
             height={69}
             width={200}
-            className="w-36 sm:w-40 lg:w-[200px] h-12 sm:h-14 lg:h-[69px]"
+            className="w-36 sm:w-40 lg:w-[200px] h-12 sm:h-14 lg:h-[69px] "
           />
         </a>
       </div>

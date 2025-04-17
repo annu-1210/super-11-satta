@@ -29,46 +29,47 @@ const YearRecords = () => {
   ];
 
   return (
-    <section className=" w-full mx-auto py-4">
+    <section className="w-full mx-auto py-4">
       <div
+        className="flex items-center justify-center p-4 my-2 shadow-lg w-full"
         style={{
-          background: "#21739c",
-          boxShadow: "inset -5px -5px 22px #0d2e3e, inset 5px 5px 22px #35b8fa",
+          background: "rgba(233, 78, 27, 1)",
+          boxShadow:
+            "inset -5px -5px 22px rgba(0,0,0,0.2), inset 5px 5px 22px rgba(255,255,255,0.1)",
         }}
-        className="flex items-center justify-center p-2 xsm:p-4 lg:px-4 lg:py-2 lg:pt-6 mx-4 my-2 rounded-xl"
       >
-        <h2 className="lg:mb-4 font-semibold leading-10 text-center text-white text-base xsm:text-xl md:text-2xl lg:text-3xl">
+        <h2 className="font-bold leading-10 text-center text-white text-xl md:text-3xl uppercase tracking-wide">
           {location} - {year}
         </h2>
       </div>
 
       {loading ? (
-        <p className="text-center text-light-gray">Loading...</p>
+        <p className="text-center text-gray-500">Loading...</p>
       ) : data.length === 0 ? (
-        <p className="text-center text-dark-muted-red">No data found.</p>
+        <p className="text-center text-red-500">No data found.</p>
       ) : (
-        <div className="overflow-auto">
-          <table className="min-w-full table-auto border border-collapse text-sm text-white">
-            <thead className="bg-deep-tealGreen">
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[1000px] text-sm text-center border-collapse">
+            <thead>
               <tr>
                 <th
-                  className="p-3 w-[237.25px]"
+                  className="px-4 py-3 text-white font-bold text-[14px] lg:text-base"
                   style={{
-                    background: "#044e41",
+                    background: "rgba(233, 78, 27, 1)",
                     boxShadow:
-                      "inset -5px -5px 22px #021f1a, inset 5px 5px 22px #067d68",
+                      "inset -3px -3px 5px rgba(0,0,0,0.3), inset 3px 3px 5px rgba(255,255,255,0.1)",
                   }}
                 >
-                  Date
+                  DATE
                 </th>
                 {months.map((month) => (
                   <th
                     key={month}
-                    className="p-3"
+                    className="px-4 py-3 text-white font-bold text-[13px] lg:text-[14px]"
                     style={{
-                      background: "#044e41",
+                      background: "rgba(233, 78, 27, 1)",
                       boxShadow:
-                        "inset -5px -5px 22px #021f1a, inset 5px 5px 22px #067d68",
+                        "inset -3px -3px 5px rgba(0,0,0,0.3), inset 3px 3px 5px rgba(255,255,255,0.1)",
                     }}
                   >
                     {month}
@@ -76,28 +77,21 @@ const YearRecords = () => {
                 ))}
               </tr>
             </thead>
+
             <tbody>
               {data.map((row, i) => (
-                <tr key={i} className="even:bg-gray-50">
-                  <td
-                    className=" py-1 text-center border border-[#640080]"
-                    style={{
-                      background: "#640080",
-                      boxShadow:
-                        "inset -5px -5px 5px #280033, inset 5px 5px 5px #a000cd",
-                    }}
-                  >
+                <tr
+                  key={i}
+                  className="even:bg-white transition-all hover:cursor-pointer"
+                >
+                  <td className="px-4 py-2 font-semibold text-gray-800 border border-gray-300">
                     {row.Date}
                   </td>
+
                   {months.map((month) => (
                     <td
                       key={month}
-                      className="py-1 text-center border border-[#640080]"
-                      style={{
-                        background: "#640080",
-                        boxShadow:
-                          "inset -5px -5px 5px #280033, inset 5px 5px 5px #a000cd",
-                      }}
+                      className="px-4 py-2 font-semibold text-gray-800 border border-gray-300"
                     >
                       {row[month] || "-"}
                     </td>

@@ -12,9 +12,9 @@ const YearlyChart = () => {
   };
 
   return (
-    <div className="flex gap-y-4 flex-col justify-center items-center py-6 sm:py-8 bg-grey mx-auto w-full">
-      <h2 className="text-xl xsm:text-2xl font-bold text-center text-white">
-        Check All Game Year Chart
+    <div className="flex gap-y-4 flex-col justify-center items-center py-6 sm:py-8 bg-white mx-auto w-full max-w-4xl shadow-xl">
+      <h2 className="text-xl xsm:text-2xl font-bold text-center text-black">
+        Check All Game's Chart According To Year
       </h2>
       <div className="flex flex-col items-center justify-center gap-6 xsm:gap-4 sm:flex-row w-full">
         <div className="flex flex-col items-center justify-center gap-4 xsm:flex-row ">
@@ -33,7 +33,7 @@ const YearlyChart = () => {
           <select
             value={selectedYear}
             onChange={(e) => setSelectedYear(e.target.value)}
-            className="px-2 py-2 mx-0 ml-1 text-sm bg-white rounded-md outline-none md:py-3 md:text-base lg:mx-3"
+            className="px-2 py-2 mx-0 ml-1 text-sm bg-white rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500 max-h-28 overflow-y-auto outline-none md:py-3 md:text-base lg:mx-3"
           >
             {/* <option value="">Select Year</option> */}
             {[2025, 2024, 2023].map((year) => (
@@ -45,7 +45,9 @@ const YearlyChart = () => {
         </div>
         <button
           onClick={handleSubmit}
-          className="px-5 py-3 border-none text-white text-sm md:text-[17px] rounded-md tracking-[4px] font-bold uppercase transition-shadow duration-500 bg-light-blue shadow-[0_0_25px_#008cff]"
+          // px-5 py-3 border-none text-white text-sm md:text-[17px] rounded-md tracking-[4px] font-bold uppercase transition-shadow duration-500 bg-light-blue shadow-[0_0_25px_#008cff]
+          className=" !rounded-lg text-center flex items-center justify-center !text-ironGray bg-transparent h-[30px] xsm:h-[32px] md:h-[38px] lg:h-[42px] xl:h-[46px] gap-2.5 gradient-border3 transition-colors duration-500 hover:bg-transparent  hover:!text-primary w-[296px] !h-10 xsm:!h-12 !h-14 px-4 xsm:px-5 md:px-6 py-2.5 xsm:py-3 md:py-3.5 !text-base xsm:!text-lg sm:!text-xl xl:!text-2xl
+        "
         >
           Check Chart
         </button>
