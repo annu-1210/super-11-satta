@@ -13,7 +13,7 @@ export default {
         tertiary: "rgba(233, 78, 27, 1)",
         tertiaryRed: "rgba(191, 47, 0, 1)",
         ironGray: "rgb(95, 94, 94)",
-        glassMedium: "rgba(255, 255, 255, 0.6)",
+        glassMedium: "rgba(255, 255, 255, 0.4)",
         bodyBg: "rgba(242, 246, 249, 1)",
         "creamy-texture": "rgba(255, 239, 211, 1)",
         "sky-blue": "rgb(96, 165, 250)",
