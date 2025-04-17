@@ -14,7 +14,8 @@ function ResultChartTable({ sheetName = "Chart_Data1" }) {
 
   if (loading) return <p className="text-center text-black py-4">Loading...</p>;
 
-  const headers = Array.isArray(data) && data.length > 0 ? Object.keys(data[0]) : [];
+  const headers =
+    Array.isArray(data) && data.length > 0 ? Object.keys(data[0]) : [];
 
   return (
     <div className="w-full overflow-x-auto">
@@ -24,10 +25,9 @@ function ResultChartTable({ sheetName = "Chart_Data1" }) {
             {headers.map((key) => (
               <th
                 key={key}
-                className="px-4 py-3 text-white font-bold text-[14px] lg:text-base"
+                className="px-4 py-3 text-white font-bold text-[14px] lg:text-base border border-gray-300"
                 style={{
-                  background: "rgba(233, 78, 27, 1)", 
-                  boxShadow: "inset -3px -3px 5px rgba(0,0,0,0.3), inset 3px 3px 5px rgba(255,255,255,0.1)", 
+                  background: "rgba(233, 78, 27, 1)",
                 }}
               >
                 {key.toUpperCase()}
