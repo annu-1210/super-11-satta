@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { locations } from "./common/Helper";
 
 const YearlyChart = () => {
-  const [selectedLocation, setSelectedLocation] = useState("Sadar Bazar");
+  const [selectedLocation, setSelectedLocation] = useState("New Ganga");
   const [selectedYear, setSelectedYear] = useState(2025);
   const navigate = useNavigate();
 

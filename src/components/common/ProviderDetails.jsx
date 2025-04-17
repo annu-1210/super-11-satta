@@ -2,9 +2,9 @@ import React from "react";
 import { listTiming } from "./Helper";
 import BarsLine from "./BarsLine";
 
-function ProviderDetails() {
+function ProviderDetails({providerName, whtsappNumber}) {
   return (
-    <section className="w-full flex items-center justify-center bg-yellow-cream shadow-xl border py-4 mx-2 my-5 sm:my-2 rounded-xl leading-6 h-fit border">
+    <section className="w-full flex items-center justify-center bg-yellow-cream shadow-xl border py-4 px-2 mx-2 my-5 sm:my-2 rounded-xl leading-6 h-fit border">
       <div className="flex flex-col items-center justify-center w-full">
         <div className="flex flex-col items-center justify-center w-full">
           <h4>
@@ -21,7 +21,7 @@ function ProviderDetails() {
               ✔
               <span className="text-dark-muted-red font-bold uppercase">
                 {" "}
-                Pawan Bhai trusted
+                {providerName} trusted
               </span>{" "}
               ✔
             </strong>
@@ -32,7 +32,7 @@ function ProviderDetails() {
           <div className="flex flex-col items-start justify-start ">
             {listTiming.map((timing, index) => (
               <p key={index} className="text-start ">
-                <span className="text-2xl text-charcoal-gray">🎙</span>
+                <span className="text-xl md:text-2xl text-charcoal-gray">🎙</span>
                 <strong className="font-bold">{timing}</strong>
               </p>
             ))}
@@ -53,11 +53,11 @@ function ProviderDetails() {
           <div className="flex space-x-0.5 mt-2">
             <BarsLine />
           </div>
-          <p className="mt-2">
+          <p className="mt-2 text-center">
             <strong>✅*Game play करने के लिये नीचे क्लिक करे</strong>
           </p>
           <a
-            href="https://wa.me/+917082450947"
+            href={`https://wa.me/+91${whtsappNumber}`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -80,7 +80,7 @@ function ProviderDetails() {
           <div className="flex space-x-0.5 ">
             <BarsLine />
           </div>
-          <p className="">
+          <p className="text-center">
             <strong>
               &reg;NOTE जरूरी सूचना एक पर्ची में सिंगल नंबर की  पासिंग मिलेगी
               डबल नंबर कि नहीं मिलेगी

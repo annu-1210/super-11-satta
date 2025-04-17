@@ -7,7 +7,7 @@ export const resultsArr = [
 ];
 
 export const listTiming = [
-  "NEW GANGA..👉1:20 𝗣𝗠 ",
+  " GANGA NEW..👉1:20 𝗣𝗠 ",
   " दुबई गोल्ड2....👉2:20 𝗣𝗠 ",
   " दिल्ली बाजार...👉3:00 𝗣𝗠 ",
   " श्री गणेश.......👉04:27 𝗣𝗠 ",
@@ -62,24 +62,23 @@ export const aboutSattaKing = [
 ];
 
 export const locations = [
-  " Sadar Bazar ",
-  " Gwalior ",
-  " Shri Ganesh ",
-  " Faridabad ",
-  " ghaziabad ",
-  " Gali ",
-  " Disawar ",
-  " Fatehpur ",
-  " Noida Night ",
+  " Ganga New ",
+  " Dubai Gold ",
   " Delhi Bazaar ",
-  " Roop Nagar ",
-  " Moradabad ",
-  " Palika Bazar ",
-  " Prayagraj ",
-  " Charminar Market ",
-  " Meena Bazar ",
-  " Rampur ",
-  " Aligarh night ",
+  " Shri Ganesh",
+  " UP King ",
+  " Faridabad ",
+  " Delhi King ",
+  " ghaziabad  ",
+  " Laxmi Nagar ",
+  " Gali Chor",
+  " Disawar ",
+  // " Palika Bazar ",
+  // " Prayagraj ",
+  // " Charminar Market ",
+  // " Meena Bazar ",
+  // " Rampur ",
+  // " Aligarh night ",
 ];
 
 export const termsAndConditions = [
