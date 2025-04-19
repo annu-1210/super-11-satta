@@ -14,7 +14,7 @@ function ResultChartTable({ sheetName = "CurrentMonth_Chart" }) {
   const secondSet = [headers[0], ...headers.slice(5)];
 
   const renderTable = (cols) => (
-    <div className="w-full overflow-x-auto mb-8">
+    <div className="w-full overflow-x-auto ">
       <table className="w-full text-sm text-center table-auto md:table-fixed border-collapse min-w-[800px]">
         <thead>
           <tr>
