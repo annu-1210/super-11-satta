@@ -28,16 +28,16 @@ function Hero() {
     <section className="w-full flex items-center justify-center bg-transparent mx-auto">
       <div className="w-full flex flex-col items-center justify-center space-y-2 ">
         <div className="flex w-full flex-col items-center justify-center space-y-2 sm:space-y-3 text-centertext-lg font-bold ">
-          <div className="flex w-full bg-blue flex-col items-center justify-center space-y-2 sm:space-y-3 text-center text-black text-lg font-bold p-2 sm:p-4 shadow-lg border border-gray-300">
+          <div className="flex w-full bg-blue flex-col items-center justify-center space-y-2 sm:space-y-3 text-center text-black text-lg font-bold p-4 sm:p-6 shadow-lg border border-gray-300">
             <Navbar />
-            <h3 className="uppercase text-creamyTexture tracking-widest text-xl md:text-2xl">
+            <h3 className="uppercase text-white tracking-widest text-xl md:text-2xl">
               Welcome to super-11-satta
             </h3>
             <p className="text-glassMedium text-xl">
               <LiveClock />
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center space-y-4 w-full bg-custom-gradient6  shadow-lg pb-4">
+          <div className="flex flex-col items-center justify-center space-y-2 w-full bg-custom-gradient6 shadow-lg pb-4">
             <GameUpdation />
             {!isYearRecord && isHome && <InstructorIntro />}
           </div>

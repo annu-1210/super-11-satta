@@ -3,7 +3,7 @@ import React from "react";
 function InstructorIntro() {
   return (
     <div className="w-full flex flex-col items-center justify-center space-y-6 !mt-12">
-      <div className="flex flex-col items-center justify-center w-full text-center text-creamyTexture text-[13px] sm:text-sm md:text-base">
+      <div className="flex flex-col items-center justify-center w-full text-center text-white text-[13px] sm:text-sm md:text-base">
         <h4>
           <strong> नमस्कार साथियों </strong>
         </h4>

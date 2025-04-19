@@ -4,7 +4,7 @@ import BarsLine from "./BarsLine";
 
 function ProviderDetails({ providerName, whtsappNumber }) {
   return (
-    <section className="w-full flex items-center justify-center ">
+    <section className="w-full flex items-center justify-center my-10">
       <div className="w-full flex flex-col items-center justify-center bg-white shadow-xl border py-4 leading-6 h-fit border text-secondaryz-10">
         <div className="flex flex-col items-center justify-center w-full">
           <h4>

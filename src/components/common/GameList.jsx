@@ -25,7 +25,7 @@ function GameList({ sheetName = "CurrentGame_sheet" }) {
                 className="border border-gray-300 rounded-lg overflow-hidden md:max-w-[330px] lg:max-w-[300px] 2xl:max-w-[330px] w-full"
               >
                 <table className="w-full text-center">
-                  <thead className="bg-primary text-white">
+                  <thead className="bg-blue text-white">
                     <tr>
                       <th
                         colSpan="2"
