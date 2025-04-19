@@ -15,8 +15,7 @@ function ResultChart() {
       </h3>
 
       <div className="w-full flex flex-col items-center justify-center space-y-8">
-        <ResultChartTable sheetName="CurrentMonth_Chart1" />
-        <ResultChartTable sheetName="CurrentMonth_Chart2" />
+        <ResultChartTable sheetName="CurrentMonth_Chart" />
       </div>
     </section>
   );

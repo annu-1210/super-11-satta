@@ -19,6 +19,7 @@ export default {
         grey: "rgb(75, 85, 99)",
         blue: "rgb(96,165,250)",
         magenta: "rgb(255,99,130)",
+        purple: "rgb(147, 99, 185)",
         "deep-gray": "rgb(17, 24, 39)",
         "lighter-gray": "rgba(229, 231, 235,1)",
         "light-gray": "rgb(128, 128, 128)",
@@ -38,7 +39,7 @@ export default {
         "custom-gradient5":
           "linear-gradient(101.49deg,rgb(235, 95, 49) 0.92%, #FDC801 96.93%)",
         "custom-gradient6":
-          "linear-gradient(to bottom right, #60a5fa, #be185d)",
+          "linear-gradient(to bottom right, rgb(147, 99, 185), #be185d)",
       },
       boxShadow: {
         "custom-inset1":

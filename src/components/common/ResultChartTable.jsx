@@ -1,15 +1,8 @@
 import React from "react";
 import useSheetData from "../../hooks/useSheetData";
+import { formatDate } from "./Helper";
 
-const formatDate = (dateString) => {
-  const date = new Date(dateString);
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const day = String(date.getDate()).padStart(2, "0");
-  return `${year}-${month}-${day}`;
-};
-
-function ResultChartTable({ sheetName = "CurrentMonth_Chart1" }) {
+function ResultChartTable({ sheetName = "CurrentMonth_Chart" }) {
   const { data, loading } = useSheetData(sheetName);
 
   if (loading) return <p className="text-center text-black py-4">Loading...</p>;
@@ -17,12 +10,15 @@ function ResultChartTable({ sheetName = "CurrentMonth_Chart1" }) {
   const headers =
     Array.isArray(data) && data.length > 0 ? Object.keys(data[0]) : [];
 
-  return (
-    <div className="w-full overflow-x-auto">
+  const firstSet = headers.slice(0, 5);
+  const secondSet = [headers[0], ...headers.slice(5)];
+
+  const renderTable = (cols) => (
+    <div className="w-full overflow-x-auto mb-8">
       <table className="w-full text-sm text-center table-auto md:table-fixed border-collapse min-w-[800px]">
         <thead>
           <tr>
-            {headers.map((key) => (
+            {cols.map((key) => (
               <th
                 key={key}
                 className="px-4 py-3 text-white font-bold text-[14px] lg:text-base border border-gray-300"
@@ -40,9 +36,9 @@ function ResultChartTable({ sheetName = "CurrentMonth_Chart1" }) {
           {data.map((row, idx) => (
             <tr
               key={idx}
-              className=" even:bg-white hover:bg-[#e94e1b]/50 transition-all"
+              className="even:bg-[#f6f6f6] hover:bg-[#e94e1b]/50 transition-all"
             >
-              {headers.map((key) => (
+              {cols.map((key) => (
                 <td
                   key={key}
                   className="px-4 py-3 font-semibold text-secondary text-[13px] lg:text-[15px] border border-gray-300"
@@ -54,6 +50,13 @@ function ResultChartTable({ sheetName = "CurrentMonth_Chart1" }) {
           ))}
         </tbody>
       </table>
+    </div>
+  );
+
+  return (
+    <div className="w-full">
+      {renderTable(firstSet)}
+      {renderTable(secondSet)}
     </div>
   );
 }

@@ -28,7 +28,7 @@ function Hero() {
     <section className="w-full flex items-center justify-center bg-transparent mx-auto">
       <div className="w-full flex flex-col items-center justify-center space-y-2 ">
         <div className="flex w-full flex-col items-center justify-center space-y-2 sm:space-y-3 text-centertext-lg font-bold ">
-          <div className="flex w-full bg-blue flex-col items-center justify-center space-y-2 sm:space-y-3 text-center text-black text-lg font-bold p-4 sm:p-6 shadow-lg border border-gray-300">
+          <div className="flex w-full bg-purple flex-col items-center justify-center space-y-2 sm:space-y-3 text-center text-black text-lg font-bold p-4 sm:p-6 shadow-lg border border-gray-300">
             <Navbar />
             <h3 className="uppercase text-white tracking-widest text-xl md:text-2xl">
               Welcome to super-11-satta
