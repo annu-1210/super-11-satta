@@ -2,10 +2,10 @@ import React from "react";
 import { listTiming } from "./Helper";
 import BarsLine from "./BarsLine";
 
-function ProviderDetails({providerName, whtsappNumber}) {
+function ProviderDetails({ providerName, whtsappNumber }) {
   return (
-    <section className="w-full max-w-4xl flex items-center justify-center bg-white shadow-xl border py-4 px-2 mx-2 my-5 sm:my-10  leading-6 h-fit border text-secondary">
-      <div className="flex flex-col items-center justify-center w-full z-10">
+    <section className="w-full flex items-center justify-center ">
+      <div className="w-full flex flex-col items-center justify-center bg-white shadow-xl border py-4 leading-6 h-fit border text-secondaryz-10">
         <div className="flex flex-col items-center justify-center w-full">
           <h4>
             <strong>😊आपका भरोसा हमारी पहचान है😊</strong>
@@ -32,7 +32,9 @@ function ProviderDetails({providerName, whtsappNumber}) {
           <div className="flex flex-col items-start justify-start ">
             {listTiming.map((timing, index) => (
               <p key={index} className="text-start ">
-                <span className="text-xl md:text-2xl text-charcoal-gray">🎙</span>
+                <span className="text-xl md:text-2xl text-charcoal-gray">
+                  🎙
+                </span>
                 <strong className="font-bold">{timing}</strong>
               </p>
             ))}

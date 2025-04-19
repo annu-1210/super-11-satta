@@ -1,9 +1,6 @@
 import React from "react";
 import useSheetData from "../hooks/useSheetData";
 
-import { FaArrowRight } from "react-icons/fa";
-import { formatTime } from "./common/Helper";
-
 function GameUpdation() {
   const { data: upcomingData } = useSheetData("Upcoming_Game");
   const { data: resultsData } = useSheetData("OnGoing_Game");
@@ -11,9 +8,6 @@ function GameUpdation() {
   const upcomingGame = upcomingData[0]?.GameName || "Loading...";
   const resultGame = resultsData[0]?.GameName || "Loading...";
   const currentResult = resultsData[0]?.CurrentResult || "--";
-  const previousResult = resultsData[0]?.PreviousResult || "--";
-  const time = resultsData[0]?.Time || "--:--";
-  const formattedTime = formatTime(time);
 
   return (
     <div
@@ -27,19 +21,7 @@ function GameUpdation() {
         </div>
         <div className="flex flex-col items-center justify-center w-full">
           <p className="text-lg sm:text-xl font-bold uppercase">{resultGame}</p>
-          <div className="flex items-center justify-center">
-            <strong className="text-xl sm:text-2xl">
-              &#123; {previousResult} &#125;
-            </strong>
-            <FaArrowRight />
-            <strong className="text-xl sm:text-2xl">
-              &#123; {currentResult} &#125;
-            </strong>
-          </div>
-
-          <p className="py-1 sm:py-2 text-sm text-white">
-            ({formattedTime})
-          </p>
+          <strong className="text-xl sm:text-2xl">{currentResult}</strong>
         </div>
       </div>
     </div>

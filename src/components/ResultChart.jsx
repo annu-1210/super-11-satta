@@ -13,9 +13,9 @@ function ResultChart() {
       >
         {month.toUpperCase()} CHART {year}
       </h3>
+
       <div className="w-full flex flex-col items-center justify-center space-y-8">
-        <ResultChartTable sheetName="Chart_Data1" />
-        <ResultChartTable sheetName="Chart_Data2" />
+        <ResultChartTable sheetName="CurrentMonth_Chart" />
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ function ImportantNews() {
           Important Satta King News
         </h2>
         <div className="grid grid-cols-1 gap-2 px-4 lg:grid-cols-3">
-          <article className="flex flex-col justify-end max-w-sm mb-4 bg-white border border-gray-500  shadow cursor-pointer h-[410px] w-full">
+          <article className="flex flex-col justify-end max-w-sm mb-4 bg-white border border-gray-500 shadow cursor-pointer h-[410px] w-full">
             {/* <img src="" alt="" /> */}
             <div className="p-5 bg-gray-700">
               <h2 className="mb-2 text-lg sm:text-2xl font-bold tracking-tight text-gray-100 uppercase hover:underline ">

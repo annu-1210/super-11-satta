@@ -12,8 +12,7 @@ function MainContent() {
     <section className="w-full flex flex-col items-center justify-center bg-transparent pb-4">
       <Results />
       <ProviderDetails providerName="PAWAN Bhai" whtsappNumber={7082450947} />
-      <GameList sheetName="Game_List1" />
-      <GameList sheetName="Game_List2" />
+      <GameList />
       <ProviderDetails providerName="KUSHAL Bhai" whtsappNumber={9253282414} />
       <YearlyChart />
       <ResultChart />

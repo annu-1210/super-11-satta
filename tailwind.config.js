@@ -17,6 +17,7 @@ export default {
         bodyBg: "rgba(242, 246, 249, 1)",
         creamyTexture: "rgba(255, 239, 211, 1)",
         grey: "rgb(75, 85, 99)",
+        blue: "#60a5fa",
         "deep-gray": "rgb(17, 24, 39)",
         "lighter-gray": "rgba(229, 231, 235,1)",
         "light-gray": "rgb(128, 128, 128)",
@@ -35,6 +36,8 @@ export default {
           "linear-gradient(106.11deg, #E94E1B 0.6%, #FFFFFF 54.16%, #FDC801 98.88%)",
         "custom-gradient5":
           "linear-gradient(101.49deg,rgb(235, 95, 49) 0.92%, #FDC801 96.93%)",
+        "custom-gradient6":
+          "linear-gradient(to bottom right, #60a5fa,  #be185d)",
       },
       boxShadow: {
         "custom-inset1":
@@ -44,6 +47,7 @@ export default {
       },
       screens: {
         xsm: "425px",
+        "3xl": "2560px",
       },
     },
   },

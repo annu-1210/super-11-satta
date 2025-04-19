@@ -2,7 +2,6 @@ import React from "react";
 
 function InstructorIntro() {
   return (
-    // bg-lavender  border-dotted border-[5px] border-black 
     <div className="w-full flex flex-col items-center justify-center space-y-6 !mt-12">
       <div className="flex flex-col items-center justify-center w-full text-center text-creamyTexture text-[13px] sm:text-sm md:text-base">
         <h4>

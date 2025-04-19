@@ -27,25 +27,42 @@ function Hero() {
   return (
     <section className="w-full flex items-center justify-center bg-transparent mx-auto">
       <div className="w-full flex flex-col items-center justify-center space-y-2 ">
-        <div className="flex w-full bg-custom-gradient3 flex-col items-center justify-center space-y-2 sm:space-y-3 text-center text-black text-lg font-bold p-2 sm:p-4 shadow-lg border border-gray-300">
-          <Navbar />
-          <h3 className="uppercase text-creamyTexture tracking-widest text-xl md:text-2xl">
-            Welcome to super-11-satta
-          </h3>
-          <p className="text-glassMedium text-xl">
-            <LiveClock />
-          </p>
-
-          <div className="flex flex-col items-center justify-center space-y-4 w-full">
+        <div className="flex w-full flex-col items-center justify-center space-y-2 sm:space-y-3 text-centertext-lg font-bold ">
+          <div className="flex w-full bg-blue flex-col items-center justify-center space-y-2 sm:space-y-3 text-center text-black text-lg font-bold p-2 sm:p-4 shadow-lg border border-gray-300">
+            <Navbar />
+            <h3 className="uppercase text-creamyTexture tracking-widest text-xl md:text-2xl">
+              Welcome to super-11-satta
+            </h3>
+            <p className="text-glassMedium text-xl">
+              <LiveClock />
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center space-y-4 w-full bg-custom-gradient6  shadow-lg pb-4">
             <GameUpdation />
             {!isYearRecord && isHome && <InstructorIntro />}
           </div>
         </div>
         {!isYearRecord && !isPrivacyPolicy && !isTermsConditions && (
           <div className="flex flex-col items-center justify-center w-full pt-4">
+            <p className="text-lg sm:text-xl font-bold uppercase text-secondary">
+              {resultGame}
+            </p>
+            <p className="py-1 sm:py-2 text-sm text-secondary">
+              ({formattedTime})
+            </p>
+            <div className="flex items-center justify-center">
+              <strong className="text-xl sm:text-2xl">
+                &#123; {previousResult} &#125;
+              </strong>
+              <FaArrowRight />
+              <strong className="text-xl sm:text-2xl">
+                &#123; {currentResult} &#125;
+              </strong>
+            </div>
+
             {isHome && (
-              <h4 className="w-full max-w-[1264px] flex items-center justify-center text-center text-ironGray shadow-xl border rounded-xl leading-6 font-semibold h-fit px-1 sm:px-4 sm:pt-4 py-2 mx-0 sm:mx-2 mt-6 sm:mt-6 my-2 leading-6 border-transparent rounded-none font-normal shadow-none text-sm sm:text-lg">
-                To Check instant A11 SATTA KING Results , Check Below Chart  👇🏻
+              <h4 className="w-full flex items-center justify-center text-center text-ironGray border rounded-xl leading-6 font-semibold h-fit px-1 sm:px-4 sm:pt-4 py-2 mt-6 leading-6 border-transparent rounded-none font-normal shadow-none text-sm sm:text-lg">
+                To Check instant A11 SATTA KING Results , Check Below Chart 👇🏻
               </h4>
             )}
 
