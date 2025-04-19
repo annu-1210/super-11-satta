@@ -33,7 +33,7 @@ const YearRecords = () => {
       <div
         className="flex items-center justify-center p-4 my-2 shadow-lg w-full"
         style={{
-          background: "rgba(233, 78, 27, 1)",
+          background: "rgb(147, 99, 185)",
           boxShadow:
             "inset -5px -5px 22px rgba(0,0,0,0.2), inset 5px 5px 22px rgba(255,255,255,0.1)",
         }}
@@ -55,7 +55,7 @@ const YearRecords = () => {
                 <th
                   className="px-4 py-3 text-white font-bold text-[14px] lg:text-base"
                   style={{
-                    background: "rgba(233, 78, 27, 1)",
+                    background: "rgb(147, 99, 185)",
                     boxShadow:
                       "inset -3px -3px 5px rgba(0,0,0,0.3), inset 3px 3px 5px rgba(255,255,255,0.1)",
                   }}
@@ -67,7 +67,7 @@ const YearRecords = () => {
                     key={month}
                     className="px-4 py-3 text-white font-bold text-[13px] lg:text-[14px]"
                     style={{
-                      background: "rgba(233, 78, 27, 1)",
+                      background: "rgb(147, 99, 185)",
                       boxShadow:
                         "inset -3px -3px 5px rgba(0,0,0,0.3), inset 3px 3px 5px rgba(255,255,255,0.1)",
                     }}

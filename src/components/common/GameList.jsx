@@ -3,7 +3,7 @@ import useSheetData from "../../hooks/useSheetData";
 import { useNavigate } from "react-router-dom";
 import { formatTime } from "./Helper";
 
-function GameList({ sheetName = "CurrentGame_sheet" }) {
+function GameList({ sheetName = "TodayGame_sheet" }) {
   const navigate = useNavigate();
   const currentYear = new Date().getFullYear();
 
