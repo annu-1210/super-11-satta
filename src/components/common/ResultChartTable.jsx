@@ -9,7 +9,7 @@ const formatDate = (dateString) => {
   return `${year}-${month}-${day}`;
 };
 
-function ResultChartTable({ sheetName = "CurrentMonth_Chart" }) {
+function ResultChartTable({ sheetName = "CurrentMonth_Chart1" }) {
   const { data, loading } = useSheetData(sheetName);
 
   if (loading) return <p className="text-center text-black py-4">Loading...</p>;
