@@ -45,7 +45,7 @@ const YearlyChart = () => {
           </div>
           <button
             onClick={handleSubmit}
-            className=" rounded-lg text-center flex items-center justify-center bg-transparent !h-[38px] lg:!h-[42px] xl:!h-[46px] gradient-border3 transition-colors duration-500 hover:bg-transparent hover:!text-primary w-[150px] xsm:w-[180px] xl:w-[296px] !h-10 xsm:!h-12 !h-14 px-4 xsm:px-5 md:px-6 py-2 xsm:py-3 lg:py-3.5 text-base xsm:text-lg sm:text-xl xl:text-2xl
+            className=" rounded-lg text-center flex items-center justify-center bg-purple !h-[38px] lg:!h-[42px] xl:!h-[46px] gradient-border3 transition-colors duration-500 text-white hover:bg-transparent hover:!text-purple w-[150px] xsm:w-[180px] xl:w-[296px] !h-10 xsm:!h-12 !h-14 px-4 xsm:px-5 md:px-6 py-2 xsm:py-3 lg:py-3.5 text-base xsm:text-lg sm:text-xl xl:text-2xl
         "
           >
             Check Chart

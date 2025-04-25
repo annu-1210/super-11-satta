@@ -23,7 +23,7 @@ function ResultChartTable({ sheetName = "CurrentMonth_Chart" }) {
                 key={key}
                 className="px-4 py-3 text-white font-bold text-[14px] lg:text-base border border-gray-300"
                 style={{
-                  background: "rgba(233, 78, 27, 1)",
+                  background: "rgb(99, 49, 140)",
                 }}
               >
                 {key.toUpperCase()}
@@ -36,7 +36,7 @@ function ResultChartTable({ sheetName = "CurrentMonth_Chart" }) {
           {data.map((row, idx) => (
             <tr
               key={idx}
-              className="even:bg-[#f6f6f6] hover:bg-[#e94e1b]/50 transition-all"
+              className="even:bg-[#f6f6f6] hover:bg-[#63318c]/50 transition-all"
             >
               {cols.map((key) => (
                 <td

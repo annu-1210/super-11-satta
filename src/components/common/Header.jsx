@@ -7,10 +7,10 @@ function Header() {
       <div className="w-full relative overflow-hidden flex items-center justify-center p-4 border-gray-200 ">
         <a href="/">
           <img
-            src="./images/super-11-new-logo.png"
+            src="./images/super-11-logo.png"
             alt="super-7-satta"
-            width={180}
-            className="w-28 sm:w-36 lg:w-[180px] relative z-10"
+            width={250}
+            className="w-28 sm:w-36 lg:w-[260px] relative z-10"
           />
         </a>
       </div>

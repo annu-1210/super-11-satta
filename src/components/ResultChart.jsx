@@ -9,7 +9,7 @@ function ResultChart() {
     <section className="w-full shadow-xl overflow-x-auto overflow-hidden mt-4">
       <h3
         id="date"
-        className="text-tertiaryRed font-bold py-4 select-none text-[22px] lg:text-4xl uppercase text-center md:text-3xl md:mb-2 leading-10"
+        className="text-purple font-bold py-4 select-none text-[22px] lg:text-4xl uppercase text-center md:text-3xl md:mb-2 leading-10"
       >
         {month.toUpperCase()} CHART {year}
       </h3>
