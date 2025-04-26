@@ -93,7 +93,7 @@ const YearRecords = () => {
                       key={month}
                       className="px-4 py-2 font-semibold text-gray-800 border border-light-gray"
                     >
-                      {row[month] || "-"}
+                     {(row[month] === 0 || row[month]) ? String(row[month]).padStart(2, "0") : "-"}
                     </td>
                   ))}
                 </tr>
