@@ -43,15 +43,15 @@ function Hero() {
           </div>
         </div>
         {!isYearRecord && !isPrivacyPolicy && !isTermsConditions && (
-          <div className="flex flex-col items-center justify-center w-full pt-4">
-            <p className="text-lg sm:text-xl font-bold uppercase text-secondary">
+          <div className="flex flex-col items-center justify-center w-full pt-4 ">
+            <p className="text-lg sm:text-xl font-bold uppercase text-secondary uppercase">
               {resultGame}
             </p>
             <p className="py-1 sm:py-2 text-sm text-secondary">
               ({formattedTime})
             </p>
             <div className="flex items-center justify-center">
-              <strong className="text-xl sm:text-2xl">
+              <strong className="text-xl sm:text-2xl uppercase">
                 &#123; {previousResult} &#125;
               </strong>
               <FaArrowRight />

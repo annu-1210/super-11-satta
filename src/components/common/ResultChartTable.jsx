@@ -5,7 +5,7 @@ import { formatDate } from "./Helper";
 function ResultChartTable({ sheetName = "CurrentMonth_Chart" }) {
   const { data, loading } = useSheetData(sheetName);
 
-  if (loading) return <p className="text-center text-black py-4">Loading...</p>;
+  if (loading) return <p className="text-center text-black py-4 animate-bounce">Loading...</p>;
 
   const headers =
     Array.isArray(data) && data.length > 0 ? Object.keys(data[0]) : [];
