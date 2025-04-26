@@ -16,7 +16,7 @@ function GameList({ sheetName = "TodayGame_sheet" }) {
     <section className="w-full flex items-center justify-center bg-transparent my-10 2xl:my-12">
       <div className="w-full overflow-x-auto">
         <h2 className="uppercase text-2xl md:text-4xl font-bold text-center mb-6">Game List</h2>
-        <table className="w-full min-w-[450px] border-collapse text-center">
+        <table className="w-full  border-collapse text-center">
           <thead className="bg-hotPink text-white">
             <tr>
               <th className="p-3 bg-purple font-bold border border-purple uppercase">
@@ -44,12 +44,12 @@ function GameList({ sheetName = "TodayGame_sheet" }) {
                     >
                       {game.Name}
                     </p>
-                    <div className="flex items-center justify-between w-full">
+                    <div className="flex flex-col sm:flex-row items-start justify-start sm:items-center sm:justify-between w-full space-y-2">
                       <p className="text-sm font-semibold text-dark-red">
                         {formatTime(game.Time)}
                       </p>
                       <button
-                        className="p-2 text-xs bg-purple rounded-md hover:bg-hotPink ml-2 text-white"
+                        className="p-2 text-xs bg-purple rounded-md hover:bg-hotPink sm:ml-2 text-white"
                         onClick={() =>
                           navigate(
                             `/year-records?location=${encodeURIComponent(
