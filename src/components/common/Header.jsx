@@ -10,7 +10,7 @@ function Header() {
             src="./images/super-11-logo.png"
             alt="super-7-satta"
             width={250}
-            className="w-44 sm:w-48 lg:w-[260px] relative z-10"
+            className="w-[350px] sm:w-48 lg:w-[260px] relative z-10"
           />
         </a>
       </div>
