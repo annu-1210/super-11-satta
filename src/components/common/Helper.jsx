@@ -63,10 +63,10 @@ export const aboutSattaKing = [
 
 export const locations = [
   " Ganga New ",
-  " Dubai Gold ",
+  " Dubai Gold 2",
   " Delhi Bazaar ",
   " Shri Ganesh",
-  " UP King ",
+  " U.P. King ",
   " Faridabad ",
   " Delhi King ",
   " ghaziabad  ",
