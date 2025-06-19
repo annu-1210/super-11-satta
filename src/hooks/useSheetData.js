@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const useSheetData = (sheetName) => {
-  const [data, setData] = useState([]);
+  const [dta, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
