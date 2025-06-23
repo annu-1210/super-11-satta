@@ -8,14 +8,13 @@ import YearRecords from "./components/YearRecords";
 import { Routes, Route } from "react-router-dom";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsAndConditions";
-import ErrorPage from "./components/ErrorPage";
 
 function App() {
 
   return (
     <div className="max-w-[1920px] px-2 sm:px-10 xl:px-24 3xl:px-10 mx-auto flex flex-col items-center justify-center font-montserrat !bg-bodyBg">
-      <ErrorPage />
-      {/* <Header />
+    
+      <Header />
       <Hero />
       <Routes>
         <Route path="/" element={<MainContent />} />
@@ -23,9 +22,9 @@ function App() {
         <Route path="/year-records" element={<YearRecords />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-conditions" element={<TermsAndConditions />} />
-      </Routes> */}
+      </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
